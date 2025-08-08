@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Ảnh Cho Bé - Lưu Giữ Tuổi Thơ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FEFBF6; /* Soft cream background */
+        }
+        /* Pastel Color Palette */
+        .bg-brand-pink { background-color: #FADADD; }
+        .text-brand-pink-dark { color: #E11D48; }
+        .bg-brand-blue { background-color: #D6E6F2; }
+        .text-brand-blue-dark { color: #1E40AF; }
+        .bg-brand-yellow { background-color: #FDE68A; }
+        .text-brand-yellow-dark { color: #D97706; }
+
+        .cta-button {
+            background-color: #F472B6; /* Vibrant Pink CTA */
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #EC4899;
+            transform: scale(1.05);
+        }
+        .zalo-button {
+            background-color: #0068FF;
+            transition: all 0.3s ease;
+        }
+        .zalo-button:hover {
+            background-color: #005ae0;
+            transform: scale(1.05);
+        }
+        .combo-card {
+            border: 1px solid #FBCFE8;
+            transition: all 0.3s ease;
+        }
+        .combo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item details > summary {
+            list-style: none;
+        }
+        .faq-item details > summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-item details[open] summary .icon-plus {
+            display: none;
+        }
+        .faq-item details:not([open]) summary .icon-minus {
+            display: none;
+        }
+    </style>
+</head>
+<body class="max-w-4xl mx-auto">
+
+    <!-- 1️⃣ Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md p-4 flex justify-between items-center">
+        <div>
+            <h1 class="font-bold text-lg text-brand-pink-dark">In Ảnh Cho Bé</h1>
+            <p class="text-xs text-gray-500 italic">📸 Lưu giữ tuổi thơ của bé – mỗi khung ảnh là một khoảnh khắc quý giá</p>
+        </div>
+        <a href="#order-form" class="cta-button text-white font-bold text-sm py-2 px-4 rounded-full whitespace-nowrap">
+            👉 Gửi ảnh để in
+        </a>
+    </header>
+
+    <main class="p-4">
+        <!-- 2️⃣ Phần 1: Gợi cảm xúc -->
+        <section class="text-center my-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <img src="https://placehold.co/300x400/FADADD/E11D48?text=Bé+sơ+sinh" alt="Ảnh bé sơ sinh" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/300x400/D6E6F2/1E40AF?text=Bé+6+tháng" alt="Ảnh bé 6 tháng" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 mt-4">
+                <img src="https://placehold.co/300x400/FFF7D4/D97706?text=Bé+1+tuổi" alt="Ảnh bé 1 tuổi" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/300x400/E9D5FF/5B21B6?text=Gia+đình" alt="Ảnh gia đình" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 mt-4">
+            </div>
+            <h2 class="text-2xl font-bold text-gray-700 leading-tight">Mỗi ngày bé lớn lên, bạn đã kịp lưu lại từng khoảnh khắc chưa?</h2>
+            <p class="mt-4 text-gray-600">Từ bức ảnh đầu đời đến nụ cười đầu tiên – tất cả xứng đáng được trân trọng. <br>👉 In ảnh lên khung treo tường hoặc để bàn – để mỗi lần nhìn lại là một lần mỉm cười.</p>
+        </section>
+
+        <!-- 3️⃣ Phần 2: Sản phẩm & Combo phổ biến -->
+        <section class="my-12">
+            <h2 class="text-3xl font-bold text-center text-brand-pink-dark mb-8">Sản Phẩm & Combo Phổ Biến</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Combo 1 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center combo-card">
+                    <div class="bg-brand-pink p-4 rounded-xl mb-4">
+                        <img src="https://placehold.co/400x300/ffffff/E11D48?text=12+Tháng+Đầu+Đời" alt="Gói 12 Tháng Đầu Đời" class="rounded-lg mx-auto">
+                    </div>
+                    <h3 class="font-bold text-xl text-brand-pink-dark">🧸 GÓI “12 THÁNG ĐẦU ĐỜI”</h3>
+                    <p class="text-gray-600 mt-2">12 ảnh 10x15cm – ép gỗ mini để bàn hoặc treo dây. Miễn phí dây treo & kẹp gỗ.</p>
+                    <p class="text-2xl font-bold text-gray-800 my-4">450.000đ</p>
+                    <a href="#order-form" class="cta-button text-white font-bold py-2 px-6 rounded-full w-full block">Chọn Gói Này</a>
+                </div>
+                <!-- Combo 2 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center combo-card border-4 border-pink-400">
+                     <div class="bg-brand-blue p-4 rounded-xl mb-4">
+                        <img src="https://placehold.co/400x300/ffffff/1E40AF?text=Khung+Ảnh+Gia+Đình" alt="Gói Khung Ảnh Gia Đình" class="rounded-lg mx-auto">
+                    </div>
+                    <h3 class="font-bold text-xl text-brand-blue-dark">🎁 GÓI “KHUNG ẢNH GIA ĐÌNH”</h3>
+                    <p class="text-gray-600 mt-2">1 ảnh lớn (30x40) + 2 ảnh nhỏ (15x21). Ép gỗ có viền, móc treo sẵn.</p>
+                    <p class="text-2xl font-bold text-gray-800 my-4">390.000đ</p>
+                    <a href="#order-form" class="cta-button text-white font-bold py-2 px-6 rounded-full w-full block">Chọn Gói Này</a>
+                </div>
+                <!-- Combo 3 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center combo-card">
+                     <div class="bg-brand-yellow p-4 rounded-xl mb-4">
+                        <img src="https://placehold.co/400x300/ffffff/D97706?text=Chuyện+Bé+-+Chuyện+Nhà" alt="Gói Chuyện Bé - Chuyện Nhà" class="rounded-lg mx-auto">
+                    </div>
+                    <h3 class="font-bold text-xl text-brand-yellow-dark">📚 GÓI “CHUYỆN BÉ – CHUYỆN NHÀ”</h3>
+                    <p class="text-gray-600 mt-2">Album 6 ảnh ép khung gỗ để bàn, kèm hộp quà. Tặng thẻ tag ghi lời chúc.</p>
+                    <p class="text-2xl font-bold text-gray-800 my-4">520.000đ</p>
+                    <a href="#order-form" class="cta-button text-white font-bold py-2 px-6 rounded-full w-full block">Chọn Gói Này</a>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-gray-600">🎨 <strong>Tùy chọn chất liệu:</strong> Gỗ, MDF, canvas, ép bóng, ép lụa...</p>
+        </section>
+
+        <!-- 4️⃣ Phần 3: Hình ảnh khách hàng thực tế (feedback) -->
+        <section class="my-12">
+            <h2 class="text-3xl font-bold text-center text-brand-pink-dark mb-8">Khách Hàng Nói Gì Về Chúng Tôi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50/FADADD/E11D48?text=Mẹ" class="w-12 h-12 rounded-full mr-4" alt="avatar">
+                        <div>
+                            <p class="font-bold">Chị Hoài An</p>
+                            <p class="text-sm text-gray-500">Hà Nội</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Mỗi lần nhìn khung ảnh bé từ lúc lọt lòng, mình lại xúc động. Chất lượng in quá đẹp, shop tư vấn dễ thương."</p>
+                    <img src="https://placehold.co/400x300/ecf0f1/34495e?text=Ảnh+feedback+của+khách" class="w-full rounded-lg mt-4" alt="Ảnh feedback">
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50/D6E6F2/1E40AF?text=Mẹ" class="w-12 h-12 rounded-full mr-4" alt="avatar">
+                        <div>
+                            <p class="font-bold">Chị Thảo My</p>
+                            <p class="text-sm text-gray-500">TP.HCM</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"In ảnh quá đẹp, đóng khung chắc chắn – ship nhanh và cẩn thận. Treo góc tường nhà xinh hẳn lên."</p>
+                    <img src="https://placehold.co/400x300/ecf0f1/34495e?text=Ảnh+feedback+của+khách" class="w-full rounded-lg mt-4" alt="Ảnh feedback">
+                </div>
+            </div>
+        </section>
+
+        <!-- 5️⃣ Phần 4: Tại sao chọn chúng tôi? (USP) -->
+        <section class="my-12 bg-pink-50 p-8 rounded-2xl">
+            <h2 class="text-3xl font-bold text-center text-brand-pink-dark mb-8">Tại Sao Hơn 5000+ Mẹ Bỉm Tin Tưởng?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="space-y-2">
+                    <i class="fas fa-camera-retro text-4xl text-pink-500"></i>
+                    <h3 class="font-bold text-lg">In Sắc Nét Từ Ảnh Điện Thoại</h3>
+                    <p class="text-sm text-gray-600">Công nghệ xử lý ảnh độc quyền, đảm bảo ảnh vỡ nét vẫn in đẹp.</p>
+                </div>
+                <div class="space-y-2">
+                    <i class="fas fa-shield-alt text-4xl text-pink-500"></i>
+                    <h3 class="font-bold text-lg">Bọc Chống Ẩm & Chống Mờ</h3>
+                    <p class="text-sm text-gray-600">Bề mặt ảnh được cán lụa hoặc mica cao cấp, bền màu trên 10 năm.</p>
+                </div>
+                 <div class="space-y-2">
+                    <i class="fas fa-shipping-fast text-4xl text-pink-500"></i>
+                    <h3 class="font-bold text-lg">Đóng Gói Chống Sốc & Ship Nhanh</h3>
+                    <p class="text-sm text-gray-600">Gói hàng cẩn thận trong hộp carton, đảm bảo an toàn tuyệt đối.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6️⃣ Phần 5: Quy trình đặt hàng đơn giản -->
+        <section class="my-12">
+            <h2 class="text-3xl font-bold text-center text-brand-pink-dark mb-8">Quy Trình Đặt Hàng Siêu Dễ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                <div class="space-y-3">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow-lg"><i class="fas fa-paper-plane text-3xl text-pink-500"></i></div>
+                    <p class="font-bold">1. Gửi ảnh</p>
+                    <p class="text-sm text-gray-600">Nhấn nút Zalo bên dưới để gửi ảnh và nhận tư vấn trực tiếp.</p>
+                    <!-- THAY SỐ ĐIỆN THOẠI CỦA BẠN VÀO ĐÂY -->
+                    <a href="https://zalo.me/0987654321" target="_blank" class="zalo-button text-white text-sm font-bold py-2 px-4 rounded-full inline-block mt-2">
+                        <i class="fab fa-rocketchat"></i> Gửi ảnh qua Zalo
+                    </a>
+                </div>
+                <div class="space-y-3">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow-lg"><i class="fas fa-ruler-combined text-3xl text-pink-500"></i></div>
+                    <p class="font-bold">2. Chọn size & mẫu</p>
+                    <p class="text-sm text-gray-600">Nhân viên sẽ tư vấn bạn chọn size và mẫu khung phù hợp.</p>
+                </div>
+                <div class="space-y-3">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow-lg"><i class="fas fa-check-double text-3xl text-pink-500"></i></div>
+                    <p class="font-bold">3. Xác nhận & In</p>
+                    <p class="text-sm text-gray-600">Bạn duyệt bản thiết kế cuối cùng trước khi chúng tôi tiến hành in.</p>
+                </div>
+                <div class="space-y-3">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow-lg"><i class="fas fa-box-open text-3xl text-pink-500"></i></div>
+                    <p class="font-bold">4. Giao tận nơi</p>
+                    <p class="text-sm text-gray-600">Nhận hàng sau 2-4 ngày và thanh toán tại nhà.</p>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-lg font-semibold text-gray-700">👉 “Không cần ra tiệm – chỉ cần ngồi nhà, gửi ảnh là xong!”</p>
+        </section>
+
+        <!-- 7️⃣ Phần 6: Bảng giá & Form đặt hàng nhanh -->
+        <section id="order-form" class="my-12 bg-white p-8 rounded-2xl shadow-2xl">
+            <h2 class="text-3xl font-bold text-center text-brand-pink-dark mb-2">Đặt In Ảnh Của Bé Ngay!</h2>
+            <p class="text-center text-gray-600 mb-8">Điền thông tin để chúng tôi liên hệ lại hoặc nhắn Zalo để được tư vấn nhanh nhất!</p>
+            <form class="space-y-4">
+                <input type="text" placeholder="Tên của bạn" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400" required>
+                <input type="tel" placeholder="Số điện thoại" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400" required>
+                <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400">
+                    <option>-- Chọn gói / sản phẩm quan tâm --</option>
+                    <option>Gói "12 Tháng Đầu Đời" - 450k</option>
+                    <option>Gói "Khung Ảnh Gia Đình" - 390k</option>
+                    <option>Gói "Chuyện Bé - Chuyện Nhà" - 520k</option>
+                    <option>Tư vấn in ảnh lẻ</option>
+                </select>
+                <button type="submit" class="cta-button text-white font-bold py-3 px-6 rounded-full w-full text-lg">GỬI YÊU CẦU GỌI LẠI</button>
+            </form>
+            <div class="text-center mt-6">
+                <p class="text-gray-600 mb-3 font-semibold">-- Hoặc --</p>
+                <!-- THAY SỐ ĐIỆN THOẠI CỦA BẠN VÀO ĐÂY -->
+                <a href="https://zalo.me/0987654321" target="_blank" class="zalo-button text-white font-bold py-3 px-8 rounded-full inline-flex items-center text-lg">
+                    <i class="fab fa-rocketchat mr-2"></i> Nhắn tin Zalo để gửi ảnh & tư vấn
+                </a>
+            </div>
+        </section>
+
+        <!-- 8️⃣ Phần 7: Câu hỏi thường gặp (FAQ) -->
+        <section class="my-12">
+            <h2 class="text-3xl font-bold text-center text-brand-pink-dark mb-8">Câu Hỏi Thường Gặp</h2>
+            <div class="space-y-4">
+                <div class="faq-item bg-white p-4 rounded-lg shadow-sm">
+                    <details>
+                        <summary class="flex justify-between items-center cursor-pointer font-semibold">
+                            ❓ Ảnh chụp điện thoại có in được không?
+                            <span>
+                                <i class="fas fa-plus icon-plus"></i>
+                                <i class="fas fa-minus icon-minus"></i>
+                            </span>
+                        </summary>
+                        <p class="mt-2 text-gray-600 pt-2 border-t">✅ Được! Ảnh điện thoại đời mới đều đủ chất lượng để in đẹp. Shop sẽ kiểm tra và báo lại bạn nếu ảnh bị mờ/vỡ trước khi in.</p>
+                    </details>
+                </div>
+                 <div class="faq-item bg-white p-4 rounded-lg shadow-sm">
+                    <details>
+                        <summary class="flex justify-between items-center cursor-pointer font-semibold">
+                            ❓ Có thể in chữ lên ảnh không?
+                             <span>
+                                <i class="fas fa-plus icon-plus"></i>
+                                <i class="fas fa-minus icon-minus"></i>
+                            </span>
+                        </summary>
+                        <p class="mt-2 text-gray-600 pt-2 border-t">✅ Có chứ! Chúng tôi miễn phí chèn tên bé, ngày sinh, hoặc những lời chúc yêu thương lên ảnh theo yêu cầu của bạn.</p>
+                    </details>
+                </div>
+                 <div class="faq-item bg-white p-4 rounded-lg shadow-sm">
+                    <details>
+                        <summary class="flex justify-between items-center cursor-pointer font-semibold">
+                            ❓ Bao lâu thì nhận được hàng?
+                             <span>
+                                <i class="fas fa-plus icon-plus"></i>
+                                <i class="fas fa-minus icon-minus"></i>
+                            </span>
+                        </summary>
+                        <p class="mt-2 text-gray-600 pt-2 border-t">✅ Thời gian dự kiến: Nội thành (HN/HCM): 2–3 ngày. Các tỉnh thành khác: 3–5 ngày tùy khu vực.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 9️⃣ Phần chân trang (Footer) -->
+    <footer class="bg-gray-800 text-white p-8 mt-8 text-center">
+        <h3 class="font-bold text-xl">In Ảnh Cho Bé</h3>
+        <div class="flex justify-center space-x-6 my-4">
+            <!-- THAY SỐ ĐIỆN THOẠI CỦA BẠN VÀO ĐÂY -->
+            <a href="https://zalo.me/0987654321" target="_blank" class="hover:text-pink-400">Zalo</a>
+            <a href="#" class="hover:text-pink-400">Facebook</a>
+            <a href="#" class="hover:text-pink-400">Shopee</a>
+        </div>
+        <p class="text-sm text-gray-400">Hotline: 0987.654.321</p>
+        <p class="text-sm text-gray-400 mt-1">Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</p>
+        <p class="text-xs text-gray-500 mt-4">&copy; 2024 In Ảnh Cho Bé. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
